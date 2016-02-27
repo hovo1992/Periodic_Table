@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+::-webkit-scrollbar{
+    height: 14px;
+    width: 14px;
+
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #5a7b5a;
+    background-clip: padding-box;
+    border: 4px solid #fff;
+}
+::-webkit-scrollbar-thumb:hover{
+    border: 1px solid #fff;
+}
+::-webkit-scrollbar-button{
+    height: 5px;
+    width: 5px;
+
+    background: transparent;
+}
+html, body, main, header, object{
+    width: 100%;
+}
+html, body, main, object{
+    height: 100%;
+}
+body{
+    min-width: 1150px;
+
+    background-color: #e2e2e2;
+}
+header{
+    height: 50px;
+
+    font-family: lobster two, cursive;
+
+    box-shadow: 0 2px 30px #000;
+}
+header > menu menu{
+    position: absolute;
+}
+header, header menu, menuitem p, .tr > menuitem > a{
+    background-color: #b5b5b5;
+}
+menuitem p, .tr > menuitem > a{
+    z-index: 2;
+}
+menuitem a:hover{
+    color: #e8e7e7;
+}
+header a{
+    text-decoration: none;
+}
+header a, menuitem p{
+	color: #fff;
+    line-height: 50px;
+}
+a:focus{
+	outline: none;
+}
+.tr > menuitem > a{
+    display: block;
+}
+@media (max-width: 940px){
+    header{
+        display: table;
+        background-color: inherit;
+        box-shadow: none;
+    }
+}

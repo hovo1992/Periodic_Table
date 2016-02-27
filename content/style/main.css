@@ -1,0 +1,167 @@
+* {
+	-webkit-user-select: none;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+}
+
+object::-webkit-scrollbar {
+	height: 12px;
+	width: 12px;
+	pointer-events: none;
+}
+
+object::-webkit-scrollbar-track {
+	background: #71756D;
+	pointer-events: none;
+}
+
+object::-webkit-scrollbar-thumb {
+	background: #5D615B;
+	pointer-events: none;
+}
+
+
+main::-webkit-scrollbar {
+	height: 12px;
+	width: 12px;
+}
+
+main::-webkit-scrollbar-track {
+	background: green;
+}
+
+main::-webkit-scrollbar-thumb {
+	background: blue;
+}
+
+main::-webkit-scrollbar-corner {
+	color: #000;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	cursor: url(../imgs/default.png), auto;
+	overflow: hidden;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+main {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+object {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.image {
+	position: absolute;
+	margin-left: 25px;
+	display: block;
+}
+
+ul {
+	margin-top: 50px;
+}
+
+.menu {
+	display: inline-block;
+	padding: 13px 30px;
+	height: 30px;
+	font-size: 21px;
+}
+
+.contacts {
+	position: relative;
+	display: inline-block;
+	cursor: url(../imgs/hand.png),auto;
+	text-transform: uppercase;
+	color: transparent;
+	text-shadow: 0px 0px 5px #fff;
+	padding: 14px 30px;
+	height: 30px;
+	font-size: 21px;
+	transition: all 0.3s ease-in-out;
+}
+
+.contacts:hover {
+	color: #D6D1D1;
+	text-shadow: 0px 0px 1px #fff;
+	padding-left: 37px;
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: url(../imgs/hand.png),auto;
+	color: transparent;
+	text-shadow: 0px 0px 5px #fff;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.links {
+	color: #D6D1D1;
+	text-shadow: 0px 0px 1px #fff;
+}
+
+a:hover {
+	padding-left: 5px;
+}
+
+menu {
+	height: 55px;
+	background-color: #716F6A;
+	text-align: center;
+	white-space: nowrap;
+}
+
+menuitem:hover ul {
+	text-align: left;
+	display: block;
+}
+
+ul {
+	width: 111px;
+	padding-top: 2px;
+	position: absolute;
+	top: 3px;
+	left: 37px;
+	list-style-type: none;
+	display: none;
+}
+
+li {
+	font-size: 15px;
+	background-color: #716F6A;
+	border-radius: 6px;
+	margin: 1px;
+	padding: 3px;
+}
+
+li a {
+	margin: 0 10px;
+}
+
+span {
+	margin-top: 72px;
+	margin-left: 43px;
+	display: inline-block;
+}

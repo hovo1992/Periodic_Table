@@ -1,0 +1,858 @@
+﻿* {
+	font-family: 'Quattrocento Sans', sans-serif;
+	-webkit-user-select: none;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+}
+
+@media (min-width: 4000px) {
+	a strong, a ruby, a ruby rt, a tt, a tr:nth-child(2) strong, h4 {
+		font-size: 5px !important;
+	}
+}
+
+body {
+	background: url(../imgs/chemistry1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	cursor: url(../imgs/default.png), auto;
+	color: #453f3f;
+	background-color: #8B7952;
+}
+
+div {
+	height: 104px;
+	width: 130px;
+	position: absolute;
+	top: 90px;
+	left: 521px;
+	display: none;
+	border-radius: 8px;
+}
+
+div rt {
+	width: 110px;
+	font-size: 12px;
+	display: table-caption;
+	padding-top: 4px;
+}
+
+div ruby {
+	font-size: 35px;
+}
+
+div ruby > rt::after {
+	content: url(../svg/svg_line.svg);
+	width: 107px;
+	position: absolute;
+	top: 9px;
+	right: 115px;
+}
+
+div ruby > rt::before {
+	content: "Atomic #";
+	position: absolute;
+	top: -8px;
+	left: -152px;
+	font-size: 18px;
+	background-color: #AAA49A;
+	opacity: .6;
+	border-radius: 5px;
+	padding: 3px 4px 1px 4px;
+}
+
+div ruby::before {
+	content: url(../svg/svg_line2.svg);
+	width: 107px;
+	position: absolute;
+	top: 39px;
+	right: 115px;
+	z-index: 1;
+}
+
+div ruby::after {
+	content: "Symbol";
+	position: absolute;
+	top: 44px;
+	left: -140px;
+	font-size: 18px;
+	background-color: #AAA49A;
+	opacity: .6;
+	border-radius: 5px;
+	padding: 3px 4px 1px 4px;
+}
+
+div strong::after {
+	content: url(../svg/svg_line3.svg);
+	position: absolute;
+	top: 47px;
+	left: 108px;
+}
+
+div strong::before {
+	content: "Atomic name";
+	position: absolute;
+	top: 33px;
+	left: 211px;
+	font-size: 18px;
+	font-weight: normal;
+	white-space: nowrap;
+	background-color: #AAA49A;
+	opacity: .6;
+	border-radius: 5px;
+	padding: 2px 4px 0px 4px;
+	}
+
+div tt::before {
+	height: 15px;
+	position: absolute;
+	top: 72px;
+	left: 205px;
+	content: "Atomic mass";
+	font-size: 18px;
+	white-space: nowrap;
+	background-color: #aaa49a;
+	opacity: .6;
+	border-radius: 5px;
+	padding: 2px 4px 5px 4px;
+}
+
+div tt::after {
+	content: url(../svg/svg_line.svg);
+	position: absolute;
+	top: 83px;
+	left: 116px;
+	}
+
+div strong {
+	width: 90px;
+	overflow: hidden;
+	font-size: 13px;
+	display: block;
+	margin: auto;
+}
+
+div tt {
+	font-size: 15px;
+	display: block;
+	padding-top: 5px;
+}
+
+td:hover div {
+	display: table;
+}
+
+caption {
+	background: #C3C5B7;
+	width: 375px;
+	margin: auto;
+	border-radius: 8px;
+	font-size: 25px;
+	font-variant: small-caps;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+	text-transform: capitalize;
+	display: table-caption;
+	opacity: 0.3;
+	margin-top: 8px;
+}
+
+table {
+	position: relative;
+	top: 55px;
+	text-align: center;
+	border-spacing: 4px;
+	margin: auto;
+}
+
+tbody tr:last-child, tfoot tr:nth-child(3) {
+	height: 3px;
+}
+
+th {
+	max-width: 60px;
+	height: 50px;
+	font-size: 13px;
+	font-weight: normal;
+	background-color: #AAA49A;
+	opacity: 0.6;
+	border-radius: 8px;
+	padding-top: 3px;
+}
+
+	th:first-child {
+		vertical-align: middle;
+	}
+
+tfoot tr:nth-child(2) th {
+	padding-left: 21px;
+}
+
+tfoot th {
+	vertical-align: middle;
+}
+
+h4 {
+	font-weight: normal;
+}
+
+hr {
+	width: 48px;
+	float: right;
+	margin: 2px 12px 2px;
+	transform: rotate(6deg);
+}
+
+#arrow {
+	text-align: center;
+	padding: 0;
+}
+
+p {
+	width: 60px;
+	font-size: 13px;
+	margin-top: 3px;
+}
+
+td {
+	height: 53px;
+	width: 65px;
+	font-size: 10px;
+	overflow: hidden;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+a ruby {
+	font-size: 16px;
+	display: block;
+}
+
+a tt {
+	font-size: 10px;
+	overflow: hidden;
+}
+
+q {
+	quotes: '['']';
+}
+
+a rt {
+	width: 54px;
+	font-size: 9px;
+	display: table-caption;
+	padding-top: 3px;
+}
+
+a strong {
+	width: 65px;
+	line-height: 10px;
+	font-size: 10px;
+	display: block;
+	overflow: hidden;
+	margin-top: 2px;
+}
+
+tfoot tr:last-child strong {
+	width: 100px;
+	line-height: 15px;
+	font-size: 13px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: auto;
+}
+
+.chemicalSeries {
+	height: 22px;
+	font-family: georgia;
+	font-size: 17px;
+}
+
+a {
+	display: block;
+	color: #222020;
+	text-decoration: none;
+}
+
+.groups a {
+	width: 101px;
+	text-overflow: ellipsis;
+	cursor: url(../imgs/group.png),auto;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 27px;
+	padding: 9px;
+	margin-left: 2px;
+}
+
+.lanthActin {
+	letter-spacing: 1px;
+	font-family: georgia;
+	font-size: 15px;
+}
+
+.rtPosit {
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: initial;
+}
+
+.group {
+	margin-left: 2px;
+}
+
+.period {
+	margin-top: 8px;
+}
+
+.bracket {
+	quotes: '('')';
+}
+
+.tdHidden {
+	opacity: 0;
+}
+
+.alkaliMetals, .alkaliMetalsSeries {
+	background: radial-gradient(ellipse at center, rgba(232,164,213,1) 50%,rgba(236,134,209,1) 100%,rgba(236,134,209,1) 100%);
+}
+
+.alkalineEarth, .alkalineEarthSeries {
+	background: radial-gradient(ellipse at center, rgba(196,153,229,1) 50%,rgba(182,118,234,1) 100%,rgba(182,118,234,1) 100%);
+}
+
+.transitMetals, .transitMetalsSeries {
+	background: radial-gradient(ellipse at center, rgba(141,168,227,1) 50%,rgba(106,148,232,1) 100%,rgba(106,148,232,1) 100%);
+}
+
+.basicMetal, .basicMetalSeries {
+	background: radial-gradient(ellipse at center, rgba(232,209,164,1) 50%,rgba(235,200,135,1) 100%,rgba(235,200,135,1) 100%);
+}
+
+.semiMetals, .semiMetalsSeries {
+	background: radial-gradient(ellipse at center, rgba(163,231,170,1) 50%,rgba(130,234,139,1) 100%,rgba(130,234,139,1) 100%);
+}
+
+.nonMetals, .nonMetalsSeries {
+	background: radial-gradient(ellipse at center, rgba(114,148,220,1) 50%,rgba(79,128,227,1) 100%,rgba(79,128,227,1) 100%);
+}
+
+.halogens, .halogensSeries {
+	background: radial-gradient(ellipse at center, rgba(214,218,106,1) 50%,rgba(223,226,70,1) 100%,rgba(223,226,70,1) 100%);
+}
+
+.nobleGas, .nobleGasSeries {
+	background: radial-gradient(ellipse at center, rgba(221,198,121,1) 50%,rgba(228,193,86,1) 100%,rgba(228,193,86,1) 100%);
+}
+
+.lanthanides, .lanthanidesSeries {
+	background: radial-gradient(ellipse at center, rgba(187,255,135,1) 50%,rgba(172,255,105,1) 100%,rgba(172,255,105,1) 100%);
+}
+
+.actinides, .actinidesSeries {
+	background: radial-gradient(ellipse at center, rgba(255,167,167,1) 50%,rgba(255,147,149,1) 100%,rgba(255,147,149,1) 100%);
+}
+
+a[href*="Hydrogen"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Helium"] {
+	cursor: url(../imgs/fr_uk.jpg), auto;
+}
+
+a[href*="Lithium"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Beryllium"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Boron"] {
+	cursor: url(../imgs/fr_uk.jpg), auto;
+}
+
+a[href*="Carbon"] {
+	cursor: url(../imgs/unknown.jpg), auto;
+}
+
+a[href*="Nitrogen"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Oxygen"] {
+	cursor: url(../imgs/uk_sw_fr.jpg), auto;
+}
+
+a[href*="Fluorine"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Neon"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Sodium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Magnesium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Aluminium"] {
+	cursor: url(../imgs/denmark.jpg), auto;
+}
+
+a[href*="Silicon"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Phosphorus"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Sulfur"] {
+	cursor: url(../imgs/unknown.jpg), auto;
+}
+
+a[href*="Clorine"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Argon"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Potassium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Calcium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Scandium"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Titanium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Vanadium"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Chromium"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Manganese"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Iron"] {
+	cursor: url(../imgs/unknown.jpg), auto;
+}
+
+a[href*="Cobalt"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Nickel"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Copper"] {
+	cursor: url(../imgs/unknown.jpg), auto;
+}
+
+a[href*="Zinc"] {
+	cursor: url(../imgs/germany_unknown.jpg), auto;
+}
+
+a[href*="Gallium"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Germanium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Arsenic"] {
+	cursor: url(../imgs/unknown.jpg), auto;
+}
+
+a[href*="Selenium"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Bromine"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Krypton"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Rubidium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Strontium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Yttrium"] {
+	cursor: url(../imgs/finland.jpg), auto;
+}
+
+a[href*="Zirconium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Niobium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Molybdenum"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Technetium"] {
+	cursor: url(../imgs/italy.jpg), auto;
+}
+
+a[href*="Ruthenium"] {
+	cursor: url(../imgs/russia.jpg), auto;
+}
+
+a[href*="Rhodium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Palladium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Silver"] {
+	cursor: url(../imgs/unknown.jpg), auto;
+}
+
+a[href*="Cadmium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Indium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Tin"] {
+	cursor: url(../imgs/unknown.jpg), auto;
+}
+
+a[href*="Antimony"] {
+	cursor: url(../imgs/unknown.jpg), auto;
+}
+
+a[href*="Tellurium"] {
+	cursor: url(../imgs/romania.jpg), auto;
+}
+
+a[href*="Iodine"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Xenon"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Caesium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Barium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href$="Lanthanide"] {
+	cursor: url(../imgs/armenia.jpg), auto;
+}
+
+a[href*="Hafnium"] {
+	cursor: url(../imgs/switzerland.jpg), auto;
+}
+
+a[href*="Tantalum"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Tungsten"] {
+	cursor: url(../imgs/spain.jpg), auto;
+}
+
+a[href*="Rhenium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Osmium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Iridium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Platinum"] {
+	cursor: url(../imgs/spain.jpg), auto;
+}
+
+a[href*="Gold"] {
+	cursor: url(../imgs/unknown.jpg), auto;
+}
+
+a[href*="Mercury"] {
+	cursor: url(../imgs/unknown.jpg), auto;
+}
+
+a[href*="Thallium"] {
+	cursor: url(../imgs/united_kingdom.jpg), auto;
+}
+
+a[href*="Lead"] {
+	cursor: url(../imgs/unknown.jpg), auto;
+}
+
+a[href*="Bismuth"] {
+	cursor: url(../imgs/unknown.jpg), auto;
+}
+
+a[href*="Polonium"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Astatine"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+a[href*="Radon"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Francium"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Radium"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href$="Actinide"] {
+	cursor: url(../imgs/armenia.jpg), auto;
+}
+
+a[href*="Rutherfordium"] {
+	cursor: url(../imgs/usa_russia.jpg), auto;
+}
+
+a[href*="Dubnium"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+a[href*="Seaborgium"] {
+	cursor: url(../imgs/usa_russia.jpg), auto;
+}
+
+a[href*="Bohrium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Hassium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Meitnerium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Darmstadtium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Roentgenium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Copernicium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Ununtrium"] {
+	cursor: url(../imgs/tbc.jpg), auto;
+}
+
+a[href*="Flerovium"] {
+	cursor: url(../imgs/usa_russia.jpg), auto;
+}
+
+a[href*="Ununpentium"] {
+	cursor: url(../imgs/tbc.jpg), auto;
+}
+
+a[href*="Livermorium"] {
+	cursor: url(../imgs/usa_russia.jpg), auto;
+}
+
+a[href*="Ununseptium"] {
+	cursor: url(../imgs/tbc.jpg), auto;
+}
+
+a[href*="Ununoctium"] {
+	cursor: url(../imgs/tbc.jpg), auto;
+}
+
+a[href*="Lanthanum"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Cerium"] {
+	cursor: url(../imgs/sw_gr.jpg), auto;
+}
+
+a[href*="Praseodymium"] {
+	cursor: url(../imgs/austria.jpg), auto;
+}
+
+a[href*="Neodymium"] {
+	cursor: url(../imgs/austria.jpg), auto;
+}
+
+a[href*="Promethium"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+a[href*="Samarium"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Europium"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Gadolinium"] {
+	cursor: url(../imgs/switzerland.jpg), auto;
+}
+
+a[href*="Terbium"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Dysprosium"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Holmium"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Erbium"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Thulium"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Ytterbium"] {
+	cursor: url(../imgs/switzerland.jpg), auto;
+}
+
+a[href*="Lutetium"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Actinium"] {
+	cursor: url(../imgs/france.jpg), auto;
+}
+
+a[href*="Thorium"] {
+	cursor: url(../imgs/sweden.jpg), auto;
+}
+
+a[href*="Protactinium"] {
+	cursor: url(../imgs/uk_gr.jpg), auto;
+}
+
+a[href*="Uranium"] {
+	cursor: url(../imgs/germany.jpg), auto;
+}
+
+a[href*="Neptunium"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+a[href*="Plutonium"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+a[href*="Americium"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+a[href*="Curium"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+a[href*="Berkelium"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+a[href*="Californium"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+a[href*="Einsteinium"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+a[href*="Fermium"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+a[href*="Mendelevium"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+a[href*="Nobelium"] {
+	cursor: url(../imgs/russia.jpg), auto;
+}
+
+a[href*="Lawrencium"] {
+	cursor: url(../imgs/usa.jpg), auto;
+}
+
+ul {
+	padding: 10px;
+	margin: 70px;
+	width: 100px;
+	background: #716D65;
+	border-radius: 7px;
+	position: absolute;
+}
+
+@media (max-width: 1800px) {
+	ul {
+		width: 1210px;
+		top: 800px;
+	}
+}
+
+span {
+	margin: 15px;
+}

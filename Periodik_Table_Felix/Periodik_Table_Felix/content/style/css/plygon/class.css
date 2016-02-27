@@ -1,0 +1,73 @@
+﻿.actinide{
+    background: radial-gradient(#ccb28d, #c99456);
+}
+.alkali_metal{
+    background: radial-gradient(#ffcbaf, #e09d7f);
+}
+.alkaline_metal{
+    background: radial-gradient(#dfe09d, #beba47);
+}
+.basic_metal{
+    background: radial-gradient(#fdb7cf, #d4969f);
+}
+.cubespinner{
+    transform-origin: 180px 0 0;
+    transform-style: preserve-3d;
+    animation: spinner3 18s linear infinite;
+}
+.face1 {
+    transform: rotateY(0deg) translateX(270px);
+    padding-left: 100px;
+}
+.face2 {
+    transform: rotateY(60deg) translateX(270px);
+    padding-left: 100px;
+}
+.face3 {
+    transform: rotateY(120deg) translateX(270px);
+    padding-left: 100px;
+}
+.face4 {
+    transform: rotateY(180deg) translateX(270px);
+    padding-left: 100px;
+}
+.face5 {
+    transform: rotateY(240deg) translateX(270px);
+    padding-left: 100px;
+}
+.face6 {
+    transform: rotateY(300deg) translateX(270px);
+    padding-left: 100px;
+}
+.halogen{
+    background: radial-gradient(#ffe1a0, #e3bc62);
+}
+.lanthanide{
+    background: radial-gradient(#e5aad7, #d175c3);
+}
+.noble_gas{
+    background: radial-gradient(#9cd492, #4aba84);
+}
+.nonmetal{
+    background: radial-gradient(#adacec, #7a7dd3);
+}
+.red{
+    background-color: #ff0000;
+}
+.semi_metal{
+    background: radial-gradient(#ace9ea, #6ec2bb);
+}
+.stage{
+    height: 340px;
+    width: 340px;
+
+    perspective: 1000px;
+
+    margin: 300px auto;
+}
+.transition_metal{
+    background: radial-gradient(#acf9a8, #8fbb8f);
+}
+#next, #prev{
+    display: none;
+}

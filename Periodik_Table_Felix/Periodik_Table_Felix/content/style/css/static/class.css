@@ -1,0 +1,15 @@
+.parent{
+	font-family: arial, arial unicode ms, sans-serif;
+}
+.parent, .child{
+	border-spacing: 4px;
+}
+.p1{
+	width: 150px;
+}
+.numb, tfoot a, tbody td a{
+	border-radius: 3px;
+}
+.first, .p1{
+	padding-right: 5px;
+}

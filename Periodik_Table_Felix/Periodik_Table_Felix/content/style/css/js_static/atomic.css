@@ -1,0 +1,318 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	height: 100%;
+	width: 100%;
+}
+main{
+    position: relative;
+
+    display: table;
+
+    padding-top: 75px;
+}
+main, td table{
+	margin: auto;
+}
+figure img{
+	width: 280px;
+}
+small{
+	font-size: 9px;
+
+	padding: 2px 0 0 5px;
+}
+small, div p:nth-child(2)::before, div p:nth-child(4)::before, div p:first-child{
+	text-align: left;
+}
+big, bdo, bdi, p, tfoot td, .numb div{
+	text-align: center;
+}
+big{
+	font-size: 20px;
+}
+big, div p:nth-child(4)::before{
+    line-height: 20px;
+}
+bdo, bdi, th, .numb p{
+	width: 56px;
+}
+bdo, bdi{
+	font-size: 7px;
+	line-height: 8px;
+
+	padding-top: 2px;
+}
+bdo{
+	direction: ltr;
+}
+bdi{
+	direction: rtl;
+}
+bdo, bdi, p, tfoot a{
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+th:nth-child(n+2) p{
+	padding-bottom: 5px;
+}
+div p:first-child{
+    height: 20px;
+
+	font-size: 17px;
+
+	padding: 5px 0 0 10px;
+}
+div p:nth-child(2){
+    height: 45px;
+}
+div p:nth-child(n+3){
+    height: 17px;
+}
+div p:nth-child(n+3), div p:nth-child(1)::before, div p:nth-child(2)::before, div p:nth-child(3)::before, div p:nth-child(4)::before, .p1{
+	font-size: 15px;
+}
+div{
+	height: 125px;
+	width: 200px;
+	
+	left: 386px;
+
+	opacity: 0;
+	visibility: hidden;
+
+	animation: hide .5s;
+	transition-delay: .5s;
+}
+div{
+	top: 190px;
+}
+div, div p:nth-child(1)::before, div p:nth-child(2)::before, div p:nth-child(3)::before, div p:nth-child(4)::before, div p:nth-child(1)::after, div p:nth-child(2)::after, div p:nth-child(3)::after, div p:nth-child(4)::after, figure{
+	position: absolute;
+}
+td a:hover+div,.numb:hover div{
+	opacity: 1;
+	visibility: visible;
+
+	animation: show .5s;
+	transition-delay: 0s;
+}
+.numb div{
+	font-family: cursive;
+	font-size: 30px;
+
+    line-height: 125px;
+}
+div p:nth-child(1)::before{
+    top: 3px;
+    left: -250px;
+
+    content: "atomic number";
+}
+div p:nth-child(1)::after{
+    width: 100px;
+
+    top: 3px;
+    left: -95px;
+
+    content: url(../../svg/line.svg);
+
+    overflow: hidden;
+}
+div p:nth-child(2)::before{
+    top: 35px;
+    left: 255px;
+
+    content: "symbol";
+}
+div p:nth-child(2)::after{
+    width: 100px;
+
+    top: 15px;
+    left: 150px;
+
+    content: url(../../svg/line.svg);
+
+    overflow: hidden;
+}
+div p:nth-child(3)::before{
+    top: 70px;
+    left: -235px;
+
+    content: "name";
+}
+div p:nth-child(3)::after{
+    width: 100px;
+
+    top: 70px;
+    left: -80px;
+
+    content: url(../../svg/line.svg);
+
+    overflow: hidden;
+}
+div p:nth-child(4)::before{
+    top: 84px;
+    left: 275px;
+
+    content: "atomic mass";
+}
+div p:nth-child(4)::after{
+    width: 100px;
+
+    top: 86px;
+    left: 170px;
+
+    content: url(../../svg/line.svg);
+
+    overflow: hidden;
+}
+div p:nth-child(1)::before, div p:nth-child(2)::before, div p:nth-child(3)::before, div p:nth-child(4)::before, div p:nth-child(1)::after, div p:nth-child(2)::after, div p:nth-child(3)::after, div p:nth-child(4)::after{
+    z-index: 1;
+
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+div p:nth-child(1)::before, div p:nth-child(2)::before, div p:nth-child(3)::before, div p:nth-child(4)::before{
+    width: 150px;
+}
+div p:nth-child(1)::before, div p:nth-child(2)::before, div p:nth-child(3)::before, div p:nth-child(4)::before, .p1, tfoot a, .numb p{
+	white-space: nowrap;
+}
+div p:nth-child(1)::before, div p:nth-child(1)::after, div p:nth-child(2)::before, div p:nth-child(2)::after, div p:nth-child(3)::before, div p:nth-child(3)::after, div p:nth-child(4)::before, div p:nth-child(4)::after, td div:hover{
+	display: none;
+}
+div p:nth-child(1)::before, div p:nth-child(3)::before, .first,.p1{
+    text-align: right;
+}
+div p:nth-child(1)::before, div p:nth-child(4)::before{
+    overflow-x: hidden;
+}
+small, big, bdo, bdi, tbody td a, a:hover + div p:nth-child(1)::before, a:hover + div p:nth-child(1)::after, a:hover + div p:nth-child(2)::before, a:hover + div p:nth-child(2)::after, a:hover + div p:nth-child(3)::before, a:hover + div p:nth-child(3)::after, a:hover + div p:nth-child(4)::after, a:hover + div p:nth-child(4)::before{
+	display: block;
+}
+a{
+    color: #000;
+	text-decoration: none;
+}
+tbody td a{
+	height: 56px;
+}
+tfoot a{
+	width: 100px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+	display: inline-block;
+    padding: 10px 5px;
+}
+a:focus{
+	outline: none;
+}
+td a:active{
+    transform: translate(-2px, 2px);
+}
+tfoot a:hover{
+    text-decoration: underline;
+}
+.actinide a, .actinide div, tr:nth-child(8) .numb, tfoot .actinide{
+    background: -webkit-radial-gradient(#ccb28d, #c99456);
+    background: -moz-radial-gradient(#ccb28d, #c99456);
+    background: -ms-radial-gradient(#ccb28d, #c99456);
+    background: radial-gradient(#ccb28d, #c99456);
+}
+.alkali_metal a, .alkali_metal div, tfoot .alkali_metal{
+    background: -webkit-radial-gradient(#ffcbaf, #e09d7f);
+    background: -moz-radial-gradient(#ffcbaf, #e09d7f);
+    background: -ms-radial-gradient(#ffcbaf, #e09d7f);
+    background: radial-gradient(#ffcbaf, #e09d7f);
+}
+.alkaline_metal a, .alkaline_metal div, tfoot .alkaline_metal{
+    background: -webkit-radial-gradient(#dfe09d, #beba47);
+    background: -moz-radial-gradient(#dfe09d, #beba47);
+    background: -ms-radial-gradient(#dfe09d, #beba47);
+    background: radial-gradient(#dfe09d, #beba47);
+}
+.halogen a, .halogen div, tfoot .halogen{
+    background: -webkit-radial-gradient(#ffe1a0, #e3bc62);
+    background: -moz-radial-gradient(#ffe1a0, #e3bc62);
+    background: -ms-radial-gradient(#ffe1a0, #e3bc62);
+    background: radial-gradient(#ffe1a0, #e3bc62);
+}
+.lanthanide a, .lanthanide div, tr:nth-child(7) .numb, tfoot .lanthanide{
+    background: -webkit-radial-gradient(#e5aad7, #d175c3);
+    background: -moz-radial-gradient(#e5aad7, #d175c3);
+    background: -ms-radial-gradient(#e5aad7, #d175c3);
+    background: radial-gradient(#e5aad7, #d175c3);
+}
+.noble_gas a, .noble_gas div, tfoot .noble_gas{
+    background: -webkit-radial-gradient(#9cd492, #4aba84);
+    background: -moz-radial-gradient(#9cd492, #4aba84);
+    background: -ms-radial-gradient(#9cd492, #4aba84);
+    background: radial-gradient(#9cd492, #4aba84);
+}
+.nonmetal a, .nonmetal div, tfoot .nonmetal{
+    background: -webkit-radial-gradient(#adacec, #7a7dd3);
+    background: -moz-radial-gradient(#adacec, #7a7dd3);
+    background: -ms-radial-gradient(#adacec, #7a7dd3);
+    background: radial-gradient(#adacec, #7a7dd3);
+}
+.basic_metal a, .basic_metal div, tfoot .basic_metal{
+    background: -webkit-radial-gradient(#fdb7cf, #d4969f);
+    background: -moz-radial-gradient(#fdb7cf, #d4969f);
+    background: -ms-radial-gradient(#fdb7cf, #d4969f);
+    background: radial-gradient(#fdb7cf, #d4969f);
+}
+.semi_metal a, .semi_metal div, tfoot .semi_metal{
+    background: -webkit-radial-gradient(#ace9ea, #6ec2bb);
+    background: -moz-radial-gradient(#ace9ea, #6ec2bb);
+    background: -ms-radial-gradient(#ace9ea, #6ec2bb);
+    background: radial-gradient(#ace9ea, #6ec2bb);
+}
+.transition_metal a, .transition_metal div, tfoot .transition_metal{
+    background: -webkit-radial-gradient(#acf9a8, #8fbb8f);
+    background: -moz-radial-gradient(#acf9a8, #8fbb8f);
+    background: -ms-radial-gradient(#acf9a8, #8fbb8f);
+}
+tbody td:not(.td1):hover a, .numb:hover{
+	background: -webkit-radial-gradient(#cccacc, #8a8787);
+	background: -moz-radial-gradient(#cccacc, #8a8787);
+	background: -ms-radial-gradient(#cccacc, #8a8787);
+	background: radial-gradient(#cccacc, #8a8787);
+}
+q{
+	quotes: '[' ']';
+}
+@keyframes show{
+	0%, 50%{
+		transform-origin: right;
+		transform: rotateY(-90deg);
+		animation-timing-function: cubic-bezier(.5, .2, .6, .7);
+	}
+	100%{
+		transform-origin: right;
+		transform: rotateY(0);
+	}
+}
+@keyframes hide{
+	0%{
+		transform-origin: left;
+		transform: rotateY(0);
+		animation-timing-function: cubic-bezier(.5, .2, .6, .7);
+	}
+	100%{
+		transform-origin: left;
+		transform: rotateY(-90deg);
+	}
+}
+@media screen and (min-width: 2500px){
+    bdo, bdi, small, th p{
+        font-size: 5px;
+    }
+    div p:nth-child(2){
+    	font-size: 30px;
+    }
+}

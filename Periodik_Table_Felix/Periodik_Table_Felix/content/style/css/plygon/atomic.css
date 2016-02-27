@@ -1,0 +1,63 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+main{
+    position: relative;
+
+    display: table;
+    margin: auto;
+}
+a{
+    color: #000;
+    text-decoration: none;
+
+    display: block;
+}
+small, big, bdo, bdi{
+    display: block;
+}
+small{
+    font-size: 9px;
+    text-align: left;
+
+    padding: 2px 0 0 5px;
+}
+big{
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+bdo, bdi{
+    width: 60px;
+
+    font-size: 7px;
+    line-height: 8px;
+    text-overflow: ellipsis;
+    text-align: center;
+    overflow: hidden;
+
+    padding-top: 2px;
+}
+bdo{
+    direction: ltr;
+}
+bdi{
+    direction: rtl;
+}
+@media screen and (min-width: 2500px){
+    bdo, bdi, small{
+        font-size: 5px;
+    }
+}
+@keyframes spinner3{
+    from{
+        transform: rotateY(0);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}

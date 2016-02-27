@@ -1,0 +1,16 @@
+figure{
+	top: 175px;
+	left: 350px;
+}
+ruby{
+    display: table-header-group;
+}
+ruby, .td_marq p:nth-child(2){
+    font-size: 20px;
+}
+rt, .td_marq p:first-child, .inline_table .th p{
+	font-size: 10px;
+}
+rt, .td_marq p:first-child{
+	padding: 1px 0 0 5px;
+}

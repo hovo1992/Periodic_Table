@@ -1,0 +1,240 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	height: 100%;
+	width: 100%;
+}
+main{
+    position: relative;
+
+    display: table;
+
+    padding-top: 75px;
+}
+main, td table{
+	margin: auto;
+}
+figure img{
+	width: 280px;
+}
+small{
+	font-size: 9px;
+
+	padding: 2px 0 0 5px;
+}
+small, big::before, bdi::before, div p:first-child{
+	text-align: left;
+}
+big, bdo, bdi, p, tfoot td, .numb div{
+	text-align: center;
+}
+big{
+	font-size: 20px;
+}
+big, bdi::before{
+    line-height: 20px;
+}
+bdo, bdi, th, .numb p{
+	width: 56px;
+}
+bdo, bdi{
+	font-size: 7px;
+	line-height: 8px;
+
+	padding-top: 2px;
+}
+bdo{
+	direction: ltr;
+}
+bdi{
+	direction: rtl;
+}
+bdo, bdi, p, tfoot a{
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+th:nth-child(n+2) p{
+	padding-bottom: 5px;
+}
+div p:first-child{
+    height: 20px;
+
+	font-size: 17px;
+
+	padding: 5px 0 0 10px;
+}
+div p:nth-child(2){
+    height: 45px;
+}
+div p:nth-child(n+3){
+    height: 17px;
+}
+div p:nth-child(n+3), small::before, big::before, bdo::before, bdi::before, .p1{
+	font-size: 15px;
+}
+div{
+	height: 125px;
+	width: 200px;
+	
+	left: 386px;
+
+	opacity: 0;
+	visibility: hidden;
+
+	animation: hide .5s;
+	transition-delay: .5s;
+}
+div, small::before{
+	top: 190px;
+}
+div, small::before, big::before, bdo::before, bdi::before, figure{
+	position: absolute;
+}
+td a:hover+div,.numb:hover div{
+	opacity: 1;
+	visibility: visible;
+
+	animation: show .5s;
+	transition-delay: 0s;
+}
+.numb div{
+	font-family: cursive;
+	font-size: 30px;
+
+    line-height: 125px;
+}
+small::before{
+    content: "atomic number __________";
+    left: 140px;
+}
+big::before{
+    content: "____________ symbol";
+    top: 220px;
+    left: 550px;
+}
+bdo::before{
+    content: "name _______________";
+    top: 258px;
+    left: 155px;
+}
+bdi::before{
+    content: "atomic mass _______________";
+    top: 270px;
+    left: 560px;
+}
+small::before, big::before, bdo::before, bdi::before {
+    width: 250px;
+    
+    z-index: 1;
+
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+small::before, big::before, bdo::before, bdi::before, .p1, tfoot a, .numb p{
+	white-space: nowrap;
+}
+small::before, big::before, bdo::before, bdi::before, td div:hover{
+	display: none;
+}
+small::before, bdo::before, .first,.p1{
+    text-align: right;
+}
+small::before, bdi::before{
+    overflow-x: hidden;
+}
+small, big, bdo, bdi, tbody td a, a:hover small::before, a:hover big::before, a:hover bdo::before, a:hover bdi::before{
+	display: block;
+}
+a{
+    color: #000;
+	text-decoration: none;
+}
+tbody td a{
+	height: 56px;
+}
+tfoot a{
+	width: 100px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+	display: inline-block;
+    padding: 10px 5px;
+}
+a:focus{
+	outline: none;
+}
+td a:active{
+    transform: translate(-2px, 2px);
+}
+tfoot a:hover{
+    text-decoration: underline;
+}
+.actinide a, .actinide div, tr:nth-child(8) .numb, tfoot .actinide{
+    background: radial-gradient(#ccb28d, #c99456);
+}
+.alkali_metal a, .alkali_metal div, tfoot .alkali_metal{
+    background: radial-gradient(#ffcbaf, #e09d7f);
+}
+.alkaline_metal a, .alkaline_metal div, tfoot .alkaline_metal{
+    background: radial-gradient(#dfe09d, #beba47);
+}
+.halogen a, .halogen div, tfoot .halogen{
+    background: radial-gradient(#ffe1a0, #e3bc62);
+}
+.lanthanide a, .lanthanide div, tr:nth-child(7) .numb, tfoot .lanthanide{
+    background: radial-gradient(#e5aad7, #d175c3);
+}
+.noble_gas a, .noble_gas div, tfoot .noble_gas{
+    background: radial-gradient(#9cd492, #4aba84);
+}
+.nonmetal a, .nonmetal div, tfoot .nonmetal{
+    background: radial-gradient(#adacec, #7a7dd3);
+}
+.basic_metal a, .basic_metal div, tfoot .basic_metal{
+    background: radial-gradient(#fdb7cf, #d4969f);
+}
+.semi_metal a, .semi_metal div, tfoot .semi_metal{
+    background: radial-gradient(#ace9ea, #6ec2bb);
+}
+.transition_metal a, .transition_metal div, tfoot .transition_metal{
+    background: radial-gradient(#acf9a8, #8fbb8f);
+}
+tbody td:not(.td1):hover a, .numb:hover{
+	background: radial-gradient(#cccacc, #8a8787);
+}
+q{
+	quotes: '[' ']';
+}
+@keyframes show{
+	0%, 50%{
+		transform-origin: right;
+		transform: rotateY(-90deg);
+		animation-timing-function: cubic-bezier(.5, .2, .6, .7);
+	}
+	100%{
+		transform-origin: right;
+		transform: rotateY(0);
+	}
+}
+@keyframes hide{
+	0%{
+		transform-origin: left;
+		transform: rotateY(0);
+		animation-timing-function: cubic-bezier(.5, .2, .6, .7);
+	}
+	100%{
+		transform-origin: left;
+		transform: rotateY(-90deg);
+	}
+}
+@media screen and (min-width: 2500px){
+    bdo, bdi, small, th p{
+        font-size: 5px;
+    }
+    div p:nth-child(2){
+    	font-size: 30px;
+    }
+}

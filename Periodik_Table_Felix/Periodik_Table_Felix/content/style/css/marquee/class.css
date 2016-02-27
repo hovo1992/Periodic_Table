@@ -1,0 +1,120 @@
+.inline_table{
+    display: inline-table;
+}
+.caption{
+    font-family: comic sans ms;
+    text-shadow: 0 3px 3px #fff;
+
+    display: table-caption;
+    margin-bottom: 100px;
+}
+.tbody{
+    display: table-row-group;
+}
+.tfoot{
+    display: table-footer-group;
+}
+.tr{
+    display: table-row;
+}
+.th{
+    font-family: sans-serif;
+}
+.th, .td{
+    min-width: 60px;
+
+    vertical-align: top;
+}
+.th, .td, .td_tfoot, .td_marq{
+    display: table-cell;
+}
+.big{
+    padding-top: 115px;
+}
+.inline_table .th:nth-child(n+2){
+      vertical-align: bottom;
+}
+.td{
+    min-height: 60px;
+
+    padding: 2px;
+}
+marquee .td{
+    padding: 0 2px;
+}
+.td_tfoot{
+    padding: 2px 4px;
+}
+.middle{
+    vertical-align: middle;
+}
+.first{
+    padding-right: 5px;
+}
+.table_marq{
+    min-width: 904px;
+    min-height: 64px;
+
+    left: 58px;
+
+    border-spacing: 4px;
+}
+.colspan1{
+    min-width: 960px;
+}
+.colspan2{
+    min-width: 600px;
+}
+.marquee1 .table_marq{
+    top: 145px;
+}
+.marquee2 .table_marq{
+    top: 85px;
+}
+.marquee1 .td_marq, .lanthanide a, .tfoot .lanthanide{
+    background: radial-gradient(#e5aad7, #d175c3);
+}
+.marquee2 .td_marq, .actinide a, .tfoot .actinide{
+    background: radial-gradient(#ccb28d, #c99456);
+}
+.td_tfoot a,.at_number,.at_number hr,.symbol,.symbol hr,.name,.name hr,.at_mass, .at_mass hr{
+    width: 100px;
+}
+.td_tfoot a,.at_number, .at_mass{
+    white-space: nowrap;
+}
+.at_number, .name{
+    left: 170px;
+
+    padding-right: 120px;
+}
+.symbol, .at_mass{
+    padding-left: 120px;
+}
+.first,.at_number,.name {
+    text-align: right;
+}
+.at_number{
+    top: 195px;
+}
+.at_number hr, .symbol hr, .name hr, .at_mass hr{
+    top: 10px;
+ }
+.symbol{
+    top: 225px;
+    left: 550px;
+}
+.symbol hr, .at_mass hr{
+    left: 0;
+ }
+.at_mass{
+    left: 560px;
+}
+.at_number hr,.name hr{
+    right: 0;
+}
+@media screen and (min-width: 2000px){
+    strong, tt, ruby rt, .td_marq p:nth-child(n+3), .td_marq p:first-child, .th .th p{
+        font-size: 5px;
+    }
+}

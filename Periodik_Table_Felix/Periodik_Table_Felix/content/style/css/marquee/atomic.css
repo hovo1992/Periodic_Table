@@ -1,0 +1,156 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+main{
+	width: 1140px;
+
+    padding-top: 75px;
+}
+main, rt, .table, .td a, .marquee1:hover .table_marq, .marquee2:hover .table_marq{
+    display: table;
+}
+main, .marquee1, .marquee2{
+    position: relative;
+}
+main, .tfoot .table{
+	margin: auto;
+}
+figure img{
+	width: 280px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+a, .td_marq{
+    border-radius: 3px;
+}
+.td_tfoot a{
+    font-size: 12px;
+    font-weight: bold;
+
+    padding: 10px 5px;
+}
+.td_tfoot a:hover{
+    text-decoration: underline;
+}
+a:focus{
+    outline: none;
+}
+marquee{
+    left: 2px;
+}
+marquee, .td_marq, .td a{
+    height: 56px;
+}
+marquee, strong, tt, .td_marq p{
+    width: 56px;
+}
+strong, tt, p, ruby::after, rt::after, strong::after, tt::after, .td_tfoot a{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+strong, tt{
+    display: block;
+}
+strong, tt, ruby, .caption, .th > p:not(.first), .td_tfoot a, .td_marq p:nth-child(n+2){
+    text-align: center;
+}
+.inline_table .th:nth-child(n+2) p{
+    padding-bottom: 5px;
+}
+strong, tt, .td_marq p:nth-child(n+3){
+    font-size: 7px;
+}
+.td_marq p:nth-child(2){
+    line-height: 20px;
+}
+.td_marq p:nth-child(n+3){
+    line-height: 8px;
+}
+marquee, figure, .table_marq, .parent > .tbody a::after, ruby::after,
+rt::after, strong::after, tt::after, .at_number, .at_number hr, .symbol,
+.symbol hr, .name, .name hr, .at_mass, .at_mass hr{
+    position: absolute;
+}
+q{
+    quotes: '[' ']';
+}
+.parent > .tbody a::after{
+    height: 125px;
+
+    content: "";
+}
+ruby::after{
+    top: 215px;
+}
+ruby::after, .caption{
+    font-size: 40px;
+}
+ruby::after, rt::after, strong::after, tt::after, .table_marq, .table_marq:hover, .td > p, .parent > .tbody a::after{
+    display: none;
+}
+.td_tfoot a, .td:hover rt:after, .td:hover ruby:after, .td:hover strong:after, .td:hover tt:after, .td:hover a:after, .td:hover > p{
+    display: inline-block;
+}
+ruby::after, rt::after, strong::after, tt::after, .parent > .tbody a::after{
+    width: 199px;
+
+    left: 387px;
+ }
+ruby::after, rt::after, strong::after, tt::after{
+    z-index: 1;
+
+    content: attr(content-text);
+}
+rt::after{
+    font-size: 17px;
+
+    padding: 10px 0 0 15px;
+}
+rt::after, .parent > .tbody a::after {
+    top: 190px;
+}
+rt::after, .symbol, .at_mass{
+    text-align: left;
+}
+rt::after, .td, .td_marq p:first-child{
+    box-sizing: border-box;
+}
+strong::after, .name{
+    top: 259px;
+}
+strong::after, tt::after, .at_number, .symbol, .name, .at_mass{
+    font-size: 15px;
+}
+tt::after,.at_mass{
+    top: 285px;
+}
+.alkali_metal a, .alkali_metal a::after, .tfoot .alkali_metal{
+    background: radial-gradient(#ffcbaf, #e09d7f);
+}
+.alkaline_metal a, .alkaline_metal a::after, .tfoot .alkaline_metal{
+    background: radial-gradient(#dfe09d, #beba47);
+}
+.basic_metal a, .basic_metal a::after, .tfoot .basic_metal{
+    background: radial-gradient(#fdb7cf, #d4969f);
+}
+.halogen a, .halogen a::after, .tfoot .halogen{
+    background: radial-gradient(#ffe1a0, #e3bc62);
+}
+.noble_gas a, .noble_gas a::after, .tfoot .noble_gas{
+    background: radial-gradient(#9cd492, #4aba84);
+}
+.nonmetal a, .nonmetal a::after, .tfoot .nonmetal{
+    background: radial-gradient(#adacec, #7a7dd3);
+}
+.parent > .tbody .td a:hover{
+    background: radial-gradient(#cccacc, #8a8787);
+}
+.semi_metal a, .semi_metal a::after, .tfoot .semi_metal{
+    background: radial-gradient(#ace9ea, #6ec2bb);
+}
+.transition_metal a, .transition_metal a::after, .tfoot .transition_metal{
+    background: radial-gradient(#acf9a8, #8fbb8f);
+}

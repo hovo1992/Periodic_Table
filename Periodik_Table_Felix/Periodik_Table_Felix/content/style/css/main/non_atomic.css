@@ -1,0 +1,70 @@
+object{
+    min-height: 1200px;
+
+    overflow: auto;
+
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+header > menu{
+	margin: auto;
+}
+header menu{
+    display: table;
+}
+header > menu menu{
+    z-index: 1;
+
+    visibility: hidden;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 18px 14px -11px #454444;
+
+    transform: translateY(-150px);
+    transition: .5s;
+}
+.tr:nth-child(3) p{
+    border-radius: 0 0 5px 5px;
+}
+.tr:nth-child(3) menuitem:hover menu{
+    visibility: visible;
+
+    transform: translateY(-5px);
+}
+menuitem{
+    width: 120px;
+    
+    font-size: 25px;
+
+    display: inline-block;
+
+}
+.tr:nth-last-child(n+2) > menuitem, .tr:last-child > menuitem:first-child{
+    border-right: 1px solid #fff;
+}
+.tr:nth-child(n+2) > menuitem, .tr:first-child > menuitem:nth-child(2){
+    border-left: 1px solid #fff;
+}
+menuitem, menuitem p ,.tr > menuitem > a{
+    position: relative;
+}
+menuitem{
+    text-align: center;
+}
+menuitem menu a{
+    text-align: left;
+
+    display: block;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+@media (max-width: 940px){
+    header > menu{
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 0 25px 4px #000;
+        margin: 0;
+    }
+    .tr:nth-last-child(n+2) > menuitem, .tr:last-child > menuitem:first-child, .tr:nth-child(n+2) > menuitem, .tr:first-child > menuitem:nth-child(2){
+        border-right: none;
+        border-left: none;
+    }
+}

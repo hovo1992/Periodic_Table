@@ -1,0 +1,400 @@
+﻿* {
+	font-family: arial;
+	-webkit-user-select: none;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+}
+
+.atomic_number {
+	width: 100px;
+	position: absolute;
+	top: 18px;
+	right: 114px;
+	transform: rotate(-5deg);
+}
+
+.atomic_name {
+	width: 100px;
+	position: absolute;
+	top: 61px;
+	right: 114px;
+	transform: rotate(3deg);
+}
+
+.atomic_mass {
+	width: 100px;
+	position: absolute;
+	top: 45px;
+	left: 112px;
+	transform: rotate(3deg);
+}
+
+.atomic_symbol {
+	width: 100px;
+	position: absolute;
+	top: 78px;
+	left: 112px;
+	transform: rotate(-3deg);
+}
+
+div {
+	height: 95px;
+	width: 120px;
+	position: absolute;
+	top: 90px;
+	left: 519px;
+	border-radius: 5px;
+	display: none;
+}
+
+	div rt {
+		width: 104px;
+		font-size: 13px;
+		display: table-caption;
+		padding-top: 3px;
+	}
+
+div ruby {
+	font-size: 32px;
+}
+
+div ruby > rt::after {
+	position: absolute;
+	top: 8px;
+	right: 213px;
+	content: "Atomic number";
+	color: #E5FAFA;
+	font-size: 18px;
+	white-space: nowrap;
+	background-color: #17996D;
+	opacity: .6;
+	border-radius: 5px;
+	padding: 3px 4px;
+}
+
+div ruby::after {
+	position: absolute;
+	top: 45px;
+	right: 213px;
+	content: "Atomic name";
+	color: #E5FAFA;
+	font-size: 18px;
+	white-space: nowrap;
+	background-color: #17996D;
+	opacity: .6;
+	border-radius: 5px;
+	padding: 3px 4px;
+}
+
+div strong {
+	line-height: 16px;
+	font-size: 13px;
+	display: block;
+	padding-bottom: 2px;
+}
+
+div strong::before {
+	content: "Atomic symbol";
+	position: absolute;
+	top: 35px;
+	left: 210px;
+	color: #E5FAFA;
+	font-size: 18px;
+	font-weight: normal;
+	white-space: nowrap;
+	background-color: #17996D;
+	opacity: .6;
+	border-radius: 5px;
+	padding: 5px 6px;
+}
+
+	div tt::before {
+	content: "Atomic weight";
+	position: absolute;
+	top: 65px;
+	left: 210px;
+	color: #E5FAFA;
+	font-size: 18px;
+	white-space: nowrap;
+	background-color: #17996D;
+	opacity: .6;
+	border-radius: 5px;
+	padding: 2px 6px;
+}
+
+div tt {
+	font-size: 12px;
+}
+
+td:hover div {
+	display: table;
+}
+
+body {
+	color: #453f3f;
+	background: url(../imgs/chemistry3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: url(../imgs/default.png), auto;
+	background-color: #8B7952;
+}
+
+caption {
+	font-size: 25px;
+	font-variant: small-caps;
+	font-weight: bold;
+	opacity: 0.6;
+	text-align: center;
+	text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+	text-transform: capitalize;
+	display: table-caption;
+	background: #077043;
+	width: 377px;
+	border-radius: 5px;
+	margin: 15px auto;
+}
+
+table {
+	position: relative;
+	top: 55px;
+	text-align: center;
+	border-spacing: 4px;
+	margin: auto;
+}
+
+tbody tr:last-child, tfoot tr:nth-child(3) {
+	height: 3px;
+}
+
+th {
+	max-width: 60px;
+	height: 50px;
+	background-color: #0D8053;
+	opacity: 0.6;
+	color: #E8E8E8;
+	font-size: 11px;
+	font-weight: normal;
+	border-radius: 5px;
+}
+
+	th:first-child {
+		vertical-align: middle;
+	}
+
+tfoot tr:nth-child(2) th {
+	padding-left: 21px;
+}
+
+tfoot th {
+	vertical-align: middle;
+}
+
+h4 {
+	font-weight: normal;
+}
+
+.hr {
+	width: 48px;
+	margin: 2px 8px 2px;
+	transform: rotate(6deg);
+}
+
+#arrow {
+	max-width: 69px;
+	height: 60px;
+	text-align: center;
+	overflow: hidden;
+	padding: 0;
+}
+
+p {
+	width: 60px;
+	font-size: 13px;
+	margin-top: 6px;
+}
+
+td {
+	max-width: 80px;
+	font-size: 10px;
+	overflow: hidden;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+a ruby {
+	font-size: 14px;
+	display: block;
+	margin-bottom: 3px;
+}
+
+a tt {
+	line-height: 14px;
+	font-size: 8px;
+	overflow: hidden;
+	margin-bottom: 7px;
+}
+
+q {
+	quotes: '['']';
+}
+
+a rt {
+	width: 54px;
+	font-size: 8px;
+	display: table-caption;
+	padding: 4px 0 0 2px;
+}
+
+a strong {
+	width: 64px;
+	line-height: 10px;
+	font-size: 9px;
+	display: block;
+	overflow: hidden;
+	margin: auto;
+}
+
+tfoot tr:last-child strong {
+	line-height: 11px;
+	width: 91px;
+	font-size: 12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: auto;
+}
+
+.chemicalSeries {
+	height: 22px;
+	font-family: georgia;
+	font-size: 17px;
+}
+
+a {
+	cursor: url(../imgs/chemistry2.png),auto;
+	color: #222020;
+	text-decoration: none;
+	display: block;
+}
+
+.groups a {
+	width: 91px;
+	cursor: url(../imgs/group.png),auto;
+	text-overflow: ellipsis;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 27px;
+	padding: 9px;
+	margin-left: 2px;
+}
+
+.lanthActin {
+	letter-spacing: 1px;
+	font-family: georgia;
+	font-size: 15px;
+}
+
+.rtPosit {
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: initial;
+}
+
+.group {
+	margin-left: 4px;
+	margin-bottom: 5px;
+}
+
+.period {
+	margin-left: 2px;
+}
+
+.bracket {
+	quotes: '('')';
+}
+
+.tdHidden {
+	opacity: 0;
+}
+
+.alkaliMetals {
+	background: linear-gradient(to bottom, rgba(204,98,200,1) 0%,rgba(212,131,217,1) 50%,rgba(228,180,232,1) 100%);
+}
+
+.alkalineEarth {
+	background: linear-gradient(to bottom, rgba(135,90,202,1) 0%,rgba(155,127,215,1) 50%,rgba(193,177,231,1) 100%);
+}
+
+.transitMetals {
+	background: linear-gradient(to bottom, rgba(71,154,195,1) 0%,rgba(112,186,210,1) 50%,rgba(168,214,228,1) 100%);
+}
+
+.basicMetal {
+	background: linear-gradient(to bottom, rgba(205,126,41,1) 0%,rgba(223,144,83,1) 50%,rgba(236,186,150,1) 100%);
+}
+
+.semiMetals {
+	background: linear-gradient(to bottom, rgba(59,181,140,1) 0%,rgba(95,205,159,1) 50%,rgba(159,225,196,1) 100%);
+}
+
+.nonMetals {
+	background: linear-gradient(to bottom, rgba(75,116,227,1) 0%,rgba(115,156,233,1) 50%,rgba(170,196,242,1) 100%);
+}
+
+.halogens {
+	background: linear-gradient(to bottom, rgba(215,215,57,1) 0%,rgba(226,216,100,1) 50%,rgba(238,230,160,1) 100%);
+}
+
+.nobleGas {
+	background: linear-gradient(to bottom, rgba(204,158,32,1) 0%,rgba(226,172,72,1) 50%,rgba(238,204,144,1) 100%);
+}
+
+.lanthanides {
+	background: linear-gradient(to bottom, rgba(50,156,85,1) 0%,rgba(77,199,107,1) 50%,rgba(146,222,164,1) 100%);
+}
+
+.actinides {
+	background: linear-gradient(to bottom, rgba(227,100,75,1) 0%,rgba(233,125,115,1) 50%,rgba(242,175,170,1) 100%);
+}
+
+.alkaliMetalsSeries {
+	background: #be6cc1;
+}
+
+.alkalineEarthSeries {
+	background: #8c5cd4;
+}
+
+.transitMetalsSeries {
+	background: #6298bb;
+}
+
+.basicMetalSeries {
+	background: #e49B71;
+}
+
+.semiMetalsSeries {
+	background: #4BB755;
+}
+
+.nonMetalsSeries {
+	background: #517cb5;
+}
+
+.halogensSeries {
+	background: #bfbc05;
+}
+
+.nobleGasSeries {
+	background: #ce9700;
+}
+
+.lanthanidesSeries {
+	background: #76e859;
+}
+
+.actinidesSeries {
+	background: #e28181;
+}

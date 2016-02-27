@@ -1,0 +1,22 @@
+figure{
+    top: 175px;
+    left: 350px;
+}
+caption{
+	font-family: comic sans ms;
+    text-shadow: 0 3px 3px #fff;
+
+	margin-bottom: 100px;
+}
+caption, div p:nth-child(2){
+	font-size: 40px;
+}
+th, .numb p{
+	font-size: 10px;
+}
+th:nth-of-type(n+2){
+	vertical-align: bottom;
+}
+tfoot td{
+	height: 35px;
+}

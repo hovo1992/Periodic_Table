@@ -1,0 +1,238 @@
+﻿* {
+	font-family: arial;
+	-webkit-user-select: none;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+main {
+	position: relative;
+	display: table;
+	margin: auto;
+	transform: scale(.8);
+}
+
+.cubespinner {
+	transform-style: preserve-3d;
+	transition: 1s;
+}
+
+.stage {
+	height: 340px;
+	width: 785px;
+	perspective: 3000px;
+	margin: 60px auto;
+}
+
+.carousel1 {
+	transform: translateZ(655px);
+}
+
+.carousel2 {
+	transform: rotateY(36deg) translateZ(655px);
+}
+
+.carousel3 {
+	transform: rotateY(72deg) translateZ(655px);
+}
+
+.carousel4 {
+	transform: rotateY(108deg) translateZ(655px);
+}
+
+.carousel5 {
+	transform: rotateY(144deg) translateZ(655px);
+}
+
+.carousel6 {
+	transform: rotateY(180deg) translateZ(655px);
+}
+
+.carousel7 {
+	transform: rotateY(216deg) translateZ(655px);
+}
+
+.carousel8 {
+	transform: rotateY(252deg) translateZ(655px);
+}
+
+.carousel9 {
+	transform: rotateY(288deg) translateZ(655px);
+}
+
+.carousel10 {
+	transform: rotateY(324deg) translateZ(655px);
+}
+
+.prev, .next {
+	position: absolute;
+	top: 500px;
+	color: #BDBDBD;
+	cursor: pointer;
+	font-size: 17px;
+	outline: none;
+	transition: .7s;
+	background: #454848;
+	padding: 10px 31px;
+	border-radius: 5px;
+}
+
+.prev {
+	right: 467px;
+}
+
+.next {
+	left: 467px;
+}
+
+.prev:hover, .next:hover {
+	background: #15333C;
+	background-position: 0 -20px;
+	transition: .7s;
+}
+
+body {
+	color: #fff;
+	font-family: Avenir, sans-serif;
+	background: #100000;
+}
+
+strong {
+	margin-top: 4px;
+}
+
+strong, ruby, rt {
+	width: 74px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: block;
+}
+
+#container div {
+	background: #757577;
+}
+
+#container div::after {
+	width: 82px;
+	position: absolute;
+	top: 230px;
+	background: #908E8C;
+	color: #202322;
+	content: attr(content-text);
+	white-space: nowrap;
+	display: none;
+	z-index: 1;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 5px 148px 5px 141px;
+}
+
+#container div:hover::after {
+	display: block;
+}
+
+.cubespinner div {
+	height: 258px;
+	width: 372px;
+	position: absolute;
+	top: 50px;
+	left: 210px;
+	border-radius: 10px;
+}
+
+table {
+	text-align: center;
+	margin: auto;
+}
+
+h4 {
+	font-weight: normal;
+}
+
+#arrow {
+	text-align: center;
+	padding: 0;
+}
+
+td {
+	max-width: 72px;
+	font-size: 10px;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+a ruby {
+	font-size: 14px;
+	display: block;
+}
+
+a tt {
+	font-size: 9px;
+	overflow: hidden;
+	display: block;
+	margin-top: 2px;
+}
+
+q {
+	quotes: '['']';
+}
+
+a rt {
+	line-height: 80%;
+	width: 61px;
+	font-size: 9px;
+	display: table-caption;
+	padding: 8px 0 0 0;
+}
+
+tbody strong, tfoot tr:nth-child(1) strong, tr:nth-child(2) strong {
+	width: 61px;
+	line-height: 10px;
+	font-size: 9px;
+	display: block;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 4px;
+}
+
+.chemicalSeries {
+	height: 22px;
+	font-family: georgia;
+	font-size: 17px;
+}
+
+a {
+	height: 62px;
+	width: 72px;
+	color: #222020;
+	text-decoration: none;
+	display: block;
+}
+
+.lanthActin {
+	font-family: georgia;
+	font-size: 15px;
+}
+
+.bracket {
+	quotes: '('')';
+}
+
+.tdHidden {
+	opacity: 0;
+}
+
+.alkaliMetals, .alkalineEarth, .transitMetals, .basicMetal, .semiMetals, .nonMetals, .halogens, .nobleGas, .lanthanides, .actinides {
+	background: linear-gradient(135deg, rgba(216,224,222,1) 0%,rgba(174,191,188,1) 19%,rgba(153,175,171,1) 39%,rgba(142,166,162,1) 56%,rgba(130,157,152,1) 76%,rgba(130,157,152,1) 76%);
+}
+
+@media (min-width: 4000px) {
+	strong, ruby rt, a tt, tr:nth-child(2) strong {
+		font-size: 4px;
+	}
+}
